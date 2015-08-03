@@ -15,6 +15,7 @@ RUN apt-get update \
         language-pack-zh-hant language-pack-gnome-zh-hant firefox-locale-zh-hant libreoffice-l10n-zh-tw \
         nginx \
         python-pip python-dev build-essential \
+	penjdk-7-jre \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
@@ -22,6 +23,11 @@ RUN apt-get update \
 ADD https://dl.dropboxusercontent.com/u/23905041/x11vnc_0.9.14-1.1ubuntu1_amd64.deb /tmp/
 ADD https://dl.dropboxusercontent.com/u/23905041/x11vnc-data_0.9.14-1.1ubuntu1_all.deb /tmp/
 RUN dpkg -i /tmp/x11vnc*.deb
+
+
+ADD http://pkgs.org/ubuntu-12.04/getdeb-apps-i386/argouml_0.34-1~getdeb1_all.deb /tmp/
+RUN dpkg -i /tmp/argouml*.deb
+
 
 ADD web /web/
 RUN pip install -r /web/requirements.txt
