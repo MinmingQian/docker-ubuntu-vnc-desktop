@@ -25,7 +25,7 @@ ADD https://dl.dropboxusercontent.com/u/23905041/x11vnc-data_0.9.14-1.1ubuntu1_a
 RUN dpkg -i /tmp/x11vnc*.deb
 
 
-ADD http://pkgs.org/ubuntu-12.04/getdeb-apps-i386/argouml_0.34-1~getdeb1_all.deb /tmp/
+ADD http://archive.getdeb.net/ubuntu/pool/apps/a/argouml/argouml_0.34-1~getdeb1_all.deb /tmp/
 RUN dpkg -i /tmp/argouml*.deb
 
 
