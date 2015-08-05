@@ -15,7 +15,7 @@ RUN apt-get update \
         language-pack-zh-hant language-pack-gnome-zh-hant firefox-locale-zh-hant libreoffice-l10n-zh-tw \
         nginx \
         python-pip python-dev build-essential \
-	penjdk-7-jre \
+	openjdk-7-jre \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
