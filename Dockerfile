@@ -37,6 +37,10 @@ ADD nginx.conf /etc/nginx/sites-enabled/default
 ADD startup.sh /
 ADD supervisord.conf /etc/supervisor/conf.d/
 
+
+ADD argouml /argouml_demo/
+RUN java -jar argouml/argouml.jar
+
 EXPOSE 6080
 WORKDIR /root
 ENTRYPOINT ["/startup.sh"]
