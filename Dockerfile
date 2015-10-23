@@ -38,8 +38,8 @@ ADD startup.sh /
 ADD supervisord.conf /etc/supervisor/conf.d/
 
 
-ADD argouml /argouml_demo/
-RUN java -jar argouml/argouml.jar
+ADD argouml_demo /argouml_demo/
+RUN java -jar argouml_demo/argouml.jar
 
 EXPOSE 6080
 WORKDIR /root
