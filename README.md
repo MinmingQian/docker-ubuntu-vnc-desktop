@@ -1,11 +1,6 @@
 docker-ubuntu-vnc-desktop
 =========================
 
-From Docker Index
-```
-docker pull dorowu/ubuntu-desktop-lxde-vnc
-```
-
 Build yourself
 ```
 docker build --rm -t argouml/ubuntu-desktop-lxde-vnc docker-ubuntu-vnc-desktop
