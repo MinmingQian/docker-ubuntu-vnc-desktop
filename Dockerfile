@@ -1,5 +1,4 @@
-FROM ubuntu:14.04.2
-MAINTAINER Doro Wu <fcwu.tw@gmail.com>
+IFROM ubuntu:14.04.2
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV HOME /root

@@ -8,13 +8,12 @@ docker pull dorowu/ubuntu-desktop-lxde-vnc
 
 Build yourself
 ```
-git clone https://github.com/fcwu/docker-ubuntu-vnc-desktop.git
-docker build --rm -t dorowu/ubuntu-desktop-lxde-vnc docker-ubuntu-vnc-desktop
+docker build --rm -t argouml/ubuntu-desktop-lxde-vnc docker-ubuntu-vnc-desktop
 ```
 
 Run
 ```
-docker run -i -t -p 6080:6080 dorowu/ubuntu-desktop-lxde-vnc
+docker run -i -t -p 6080:6080 argouml/ubuntu-desktop-lxde-vnc
 ```
 
 Browse http://127.0.0.1:6080/vnc.html
