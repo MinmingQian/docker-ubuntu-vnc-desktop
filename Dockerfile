@@ -1,4 +1,4 @@
-IFROM ubuntu:14.04.2
+FROM ubuntu:14.04.2
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV HOME /root
